@@ -1,0 +1,139 @@
+﻿@{
+    Layout = "_ConfigurePlugin";
+}
+@model ConfigurationModel
+
+@await Component.InvokeAsync("StoreScopeConfiguration")
+
+<form method="post">
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <p>
+                    <b>@T("Plugins.Payments.ePay.Fields.Configure.Message1")</b>
+                    <br />
+                    <br />
+                    @T("Plugins.Payments.ePay.Fields.Configure.Message2")
+                    <br />
+                    @T("Plugins.Payments.ePay.Fields.Configure.Message3")
+                    <br />
+                    @T("Plugins.Payments.ePay.Fields.Configure.Message4")
+                    <br />
+                    @T("Plugins.Payments.ePay.Fields.Configure.Message5")
+                    <br />
+                    @T("Plugins.Payments.ePay.Fields.Configure.Message6")
+                    <br />
+                    @T("Plugins.Payments.ePay.Fields.Configure.Message7")
+                    <br />
+                    <b>@T("Plugins.Payments.ePay.Fields.Configure.Message8")</b>
+                    <br />
+                    @T("Plugins.Payments.ePay.Fields.Configure.Message9")
+                    <br />
+                    @T("Plugins.Payments.ePay.Fields.Configure.Message10")
+                    <br />
+                    <br />
+                    <b>@T("Plugins.Payments.ePay.Fields.Configure.Message11")</b>
+                </p>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="UseSandbox_OverrideForStore" asp-input="UseSandbox" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="UseSandbox" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="UseSandbox" />
+                        <span asp-validation-for="UseSandbox"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="EnableEpay_OverrideForStore" asp-input="EnableEpay" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="EnableEpay" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="EnableEpay" />
+                        <span asp-validation-for="EnableEpay"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="EnableEasyPay_OverrideForStore" asp-input="EnableEasyPay" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="EnableEasyPay" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="EnableEasyPay" />
+                        <span asp-validation-for="EnableEasyPay"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="CustomerNumber_OverrideForStore" asp-input="CustomerNumber" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="CustomerNumber" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="CustomerNumber" />
+                        <span asp-validation-for="CustomerNumber"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="DealerEmail_OverrideForStore" asp-input="DealerEmail" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="DealerEmail" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="DealerEmail" />
+                        <span asp-validation-for="DealerEmail"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="SecretKey_OverrideForStore" asp-input="SecretKey" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="SecretKey" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="SecretKey" />
+                        <span asp-validation-for="SecretKey"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="ExpirationTimeDays_OverrideForStore" asp-input="ExpirationTimeDays" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="ExpirationTimeDays" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="ExpirationTimeDays" />
+                        <span asp-validation-for="ExpirationTimeDays" asp-postfix="@T("Plugins.Payments.ePay.Fields.Configure.Suffix.Days").Text"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="AdditionalFee_OverrideForStore" asp-input="AdditionalFee" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="AdditionalFee" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="AdditionalFee" />
+                        <span asp-validation-for="AdditionalFee"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="AdditionalFeePercentage_OverrideForStore" asp-input="AdditionalFeePercentage" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="AdditionalFeePercentage" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="AdditionalFeePercentage" />
+                        <span asp-validation-for="AdditionalFeePercentage"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        &nbsp;
+                    </div>
+                    <div class="col-md-9">
+                        <input type="submit" name="save" class="btn bg-blue" value="@T("Admin.Common.Save")" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

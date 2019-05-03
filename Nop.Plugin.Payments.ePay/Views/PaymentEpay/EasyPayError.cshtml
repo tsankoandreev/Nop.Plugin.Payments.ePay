@@ -1,0 +1,18 @@
+﻿@model EasyPayErrorModel
+@{
+    Layout = "_ColumnsOne";
+
+    //title
+    Html.AddTitleParts(T("Plugins.Payments.ePay.Fields.Title.Error").Text);
+}
+<div class="page checkout-page order-details-page">
+    <div class="section options">
+        <div>
+            @T("Plugins.Payments.ePay.Fields.Configure.EasyPayError")
+        </div>
+        <br />
+        <div class="actions">
+            <input type="button" value="@T("Order.Reorder")" class="button-2 re-order-button" onclick="setLocation('@Url.RouteUrl("ReOrder", new { orderId = Model.OrderId })    ')" />
+        </div>
+    </div>
+</div>

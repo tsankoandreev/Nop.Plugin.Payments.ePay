@@ -1,0 +1,55 @@
+﻿@{
+    Layout = "";
+}
+@model EpayPaymentMethodModel
+
+<div class="payment-method">
+    <ul class="method-list">
+        <li>
+
+            @if (Model.EnableEpay)
+            {
+                <div class="method-name">
+                    <div class="payment-logo">
+                        <label for="Epay">
+                            <img alt="Epay" src="@Url.Content("~/Plugins/Payments.ePay/epay.png")">
+                        </label>
+                    </div>
+                    <div class="payment-details">
+                        @Html.RadioButton("PaymentType", "Epay", (Model.PaymentType == PaymentType.Epay), new { id = "Epay" })
+                        <label class="forcheckbox" for="Epay">@T("Plugins.Payments.ePay.Fields.Configure.EpayName")</label>
+                    </div>
+                </div>
+            }
+
+        </li>
+        <li>
+
+            @if (Model.EnableEasyPay)
+            {
+                <div class="method-name">
+                    <div class="payment-logo">
+                        <label for="EasyPay">
+                            <img alt="EasyPay" src="@Url.Content("~/Plugins/Payments.ePay/easypay.png")" />
+                        </label>
+                    </div>
+                    <div class="payment-details">
+                        @Html.RadioButton("PaymentType", "EasyPay", (Model.PaymentType == PaymentType.EasyPay), new { id = "EasyPay" })
+                        <label class="forcheckbox" for="EasyPay">@T("Plugins.Payments.ePay.Fields.Configure.EasyPayName")</label>
+                    </div>
+                </div>
+            }
+
+
+        </li>
+
+        @if (!Model.EnableEpay && !Model.EnableEasyPay)
+        {
+
+            <li>
+                @T("Plugins.Payments.ePay.Fields.Configure.NoPaymentMethodAvailable")
+            </li>
+
+        }
+    </ul>
+</div>

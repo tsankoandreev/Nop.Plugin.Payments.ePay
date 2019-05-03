@@ -1,0 +1,17 @@
+D:\Temp\nopCommerce-develop\src\Plugins\Nop.Plugin.Payments.ePay\obj\Debug\netcoreapp2.2\Nop.Plugin.Payments.ePay.csproj.CoreCompileInputs.cache
+D:\Temp\nopCommerce-develop\src\Plugins\Nop.Plugin.Payments.ePay\obj\Debug\netcoreapp2.2\Nop.Plugin.Payments.ePay.AssemblyInfoInputs.cache
+D:\Temp\nopCommerce-develop\src\Plugins\Nop.Plugin.Payments.ePay\obj\Debug\netcoreapp2.2\Nop.Plugin.Payments.ePay.AssemblyInfo.cs
+D:\Temp\nopCommerce-develop\src\Presentation\Nop.Web\Plugins\Payments.ePay\Views\PaymentEpay\Completed.cshtml
+D:\Temp\nopCommerce-develop\src\Presentation\Nop.Web\Plugins\Payments.ePay\Views\PaymentEpay\Configure.cshtml
+D:\Temp\nopCommerce-develop\src\Presentation\Nop.Web\Plugins\Payments.ePay\Views\PaymentEpay\EasyPayError.cshtml
+D:\Temp\nopCommerce-develop\src\Presentation\Nop.Web\Plugins\Payments.ePay\Views\PaymentEpay\PaymentInfo.cshtml
+D:\Temp\nopCommerce-develop\src\Presentation\Nop.Web\Plugins\Payments.ePay\Views\PaymentEpay\_ViewImports.cshtml
+D:\Temp\nopCommerce-develop\src\Presentation\Nop.Web\Plugins\Payments.ePay\logo.jpg
+D:\Temp\nopCommerce-develop\src\Presentation\Nop.Web\Plugins\Payments.ePay\plugin.json
+D:\Temp\nopCommerce-develop\src\Presentation\Nop.Web\Plugins\Payments.ePay\Nop.Plugin.Payments.ePay.deps.json
+D:\Temp\nopCommerce-develop\src\Presentation\Nop.Web\Plugins\Payments.ePay\Nop.Plugin.Payments.ePay.dll
+D:\Temp\nopCommerce-develop\src\Presentation\Nop.Web\Plugins\Payments.ePay\Nop.Plugin.Payments.ePay.pdb
+D:\Temp\nopCommerce-develop\src\Plugins\Nop.Plugin.Payments.ePay\obj\Debug\netcoreapp2.2\Nop.Plugin.Payments.ePay.csproj.CopyComplete
+D:\Temp\nopCommerce-develop\src\Plugins\Nop.Plugin.Payments.ePay\obj\Debug\netcoreapp2.2\Nop.Plugin.Payments.ePay.dll
+D:\Temp\nopCommerce-develop\src\Plugins\Nop.Plugin.Payments.ePay\obj\Debug\netcoreapp2.2\Nop.Plugin.Payments.ePay.pdb
+D:\Temp\nopCommerce-develop\src\Plugins\Nop.Plugin.Payments.ePay\obj\Debug\netcoreapp2.2\Nop.Plugin.Payments.ePay.csprojAssemblyReference.cache

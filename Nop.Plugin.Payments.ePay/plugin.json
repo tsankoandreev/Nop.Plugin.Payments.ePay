@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Payment methods",
+  "FriendlyName": "Payment ePay/EasyPay",
+  "SystemName": "Payments.ePay/EasyPay",
+  "Version": "4.1",
+  "SupportedVersions": [ "4.20" ],
+  "Author": "",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Payments.ePay.dll",
+  "Description": "This plugin allows paying with ePay.bg and EasyPay."
+}
